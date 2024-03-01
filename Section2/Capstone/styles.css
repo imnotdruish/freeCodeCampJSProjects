@@ -1,0 +1,132 @@
+:root {
+  --teal-200: #99f6e4;
+  --teal-400: #2dd4bf;
+  --teal-600: #0d9488;
+  --teal-800: #115e59;
+  --teal-900: #134e4a;
+  --error-color: #c90303;
+  --error-background: #ffadad; 
+} 
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  min-height: 100svh;
+  padding: 20px;
+  font-family: 'M PLUS Code Latin', san-serif;
+  font-size: 1.5em;
+  background-color: var(--teal-800);
+  color: var(--teal-600);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px auto;
+  max-width: 400px;
+  font-weight: 600;
+  font-size: 3em;
+  color: var(--teal-200);
+  padding-top: 20px;
+}
+
+.wrapper {
+  color: var(--teal-600);
+  margin: auto 25px;
+  padding: 15px auto;
+  border: 3px solid var(--teal-800);
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  background-color: var(--teal-200);
+}
+
+.container {
+  border: 0 none;
+  height: 100%;
+  padding: 25px;
+  margin: 10px 20px;
+}
+
+label {
+  display: block;
+  font-size: 2em;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  padding: 0 auto 10px auto;
+}
+
+input {
+  display: block;
+  font-size: 2em;
+  width: 100%;
+  height: 60px;
+  padding: 0 auto;
+  margin: 0 auto;
+  color: var(--teal-200);
+  background-color: var(--teal-900);
+  border: 4px solid var(--teal-200);
+}
+
+button {
+  cursor: pointer;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: var(--teal-600);
+  color: var(--teal-400);
+  font-size: 1.4em;
+  font-weight: 600;
+  border: 2px solid var(--teal-900);
+  width: 100%;
+}
+
+.output {
+  color: var(--teal-600);
+  background-color: var(--teal-200);
+  border: 3px solid var(--teal-900);
+  font-size: 2.5rem;
+  width: 90%;
+  max-width: 600px;
+  min-height: 55px;
+  margin-top: 25px;
+  padding: 15px;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.error {
+  font-size: 1.5rem;
+  background-color: var(--error-background);
+  color: var(--error-color);
+  border: 3px solid var(--error-color);
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
