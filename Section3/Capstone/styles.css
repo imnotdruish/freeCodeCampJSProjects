@@ -1,0 +1,82 @@
+:root {
+  --primary-color: #e2e8f0;
+  --secondary-color: #94a3b8;
+  --tertiary-color: #1e293b;
+  --font-size-lg: 2em;
+  --font-size-md: 1em;
+  --font-size-sm: 0.5em;
+  --font-family-bold: 'Bebas Neue', sans-serif;
+  --font-family-accent: 'Share Tech', sans-serif;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: var(--font-size-md);
+  background-color: var(--secondary-color);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 10px 0;
+  align-items: center;
+  width: 75%;
+  max-width: 600px;
+  background-color: var(--tertiary-color);
+}
+
+label {
+  font-size: var(--font-size-lg);
+  color: var(--primary-color);
+}
+
+input {
+  font-size: var(--font-size-lg);
+  font-family: var(--font-family-accent);
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.output {
+  margin-top: 10px;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-family-accent);
+  text-align: center;
+  color: var(--tertiary-color);
+  background-color: var(--primary-color);
+  width: 90%;
+  word-wrap: break-word;
+  max-height: 800px;
+  overflow-y: auto;
+}
+
+.output-content {
+  font-size: var(--font-size-md);
+  margin: 10px 0;
+  padding: 5px;
+  word-wrap: break-word;
+}
+
+.buttons {
+  display: flex;
+  gap: 4px;
+}
+
+button {
+  padding: 10px;
+  font-family: var(--font-family-bold);
+  font-size: 1.5em;
+  border-radius: 8px;
+  margin-top: 10px;
+}
