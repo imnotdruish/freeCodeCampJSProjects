@@ -7,16 +7,16 @@
 }
 
 :root {
-  --dark-grey: #1b1b32;
-  --light-grey: #f5f6f7;
+  --dark-grey: #1e293b;
+  --light-grey: #94a3b8;
   --black: #000;
   --white: #fff;
-  --grey: #3b3b4f;
-  --golden-yellow: #fecc4c;
-  --yellow: #ffcc4c;
-  --gold: #feac32;
-  --orange: #ffac33;
-  --dark-orange: #f89808;
+  --grey: #475569;
+  --teal-700: #0f766e;
+  --teal-500: #14b8a6;
+  --teal-600: #0d9488;
+  --teal-800: #115e59;
+  --teal-950: #042f2e;
 }
 
 body {
@@ -40,7 +40,7 @@ h1 {
   width: 50%;
   margin: 20px auto;
   height: 300px;
-  border-radius: 10px;
+  border-radius: 25px;
   overflow-y: scroll;
 }
 
@@ -53,15 +53,19 @@ h1 {
 }
 
 main {
+  width: 80%;
+  margin: 0 auto;
+} 
+
+#game {
   background-color: var(--light-grey);
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 1rem;
-  margin: auto;
+  margin: 0 auto;
   justify-items: center;
-  width: 50%;
-  border-radius: 10px;
+  width: 75%;
+  border-radius: 25px;
 }
 
 #dice {
@@ -83,8 +87,12 @@ main {
   text-align: center;
 }
 
+#score-options {
+  font-size: 1.5rem;
+}
+
 input[type="radio"]:disabled + label {
-  color: var(--grey);
+  color: var(--dark-grey);
 }
 
 #score-history {
@@ -93,29 +101,45 @@ input[type="radio"]:disabled + label {
   list-style-position: inside;
 }
 
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
 .btn {
   cursor: pointer;
   width: 200px;
-  margin: 10px 0 10px 0.5rem;
+  height: 40px;
+  margin: 10px 0.5rem;
   color: var(--black);
-  background-color: var(--gold);
-  background-image: linear-gradient(var(--golden-yellow), var(--orange));
-  border-color: var(--gold);
-  border-width: 3px;
+  background-color: var(--teal-600);
 }
 
 .btn:hover:enabled {
-  background-image: linear-gradient(var(--yellow), var(--dark-orange));
+  background-color: var(--teal-500);
 }
 
 @media (max-width: 992px) {
   main {
+    margin: 50px auto;
+    width: 90%;
+  }
+
+  #game {
     width: 100%;
   }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 @media (max-width: 500px) {
+  
   .btn {
+    height: 50px;
     width: 120px;
   }
 }
