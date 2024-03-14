@@ -9,26 +9,26 @@ These are the projects from the freeCodeCamp JavaScript Algorithms and Data Stru
   - Calorie Counter
   - Music Player
   - Date Formatter
-  - Palindrome Checker
+  - Capstone: Palindrome Checker
 * Section 2
   - Football Team Cards
   - Todo App
   - Decimal to Binary Converter
-  - Roman Numeral Converter
+  - Capstone: Roman Numeral Converter
 * Section 3
   - Number Sorter
   - Statistics Calculator
   - Spreadsheet
-  - US Telephone Number Validator
+  - Capstone: US Telephone Number Validator
 * Section 4
   - Shopping Cart
   - Platformer Game
   - Dice Game
-  - Cash Register
+  - Capstone: Cash Register
 * Section 5
   - freeCodeCamp Authors Page
   - freeCodeCamp Forum Leaderboard
-  - Pokémon Search App
+  - Capstone: Pokémon Search App
  
 ## What I learned
 
